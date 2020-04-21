@@ -1,0 +1,11 @@
+/* css Styling goes here */
+
+body{
+    background-color: rgb(250, 250,250);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
