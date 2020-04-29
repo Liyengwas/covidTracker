@@ -29,7 +29,7 @@ const Chart = ()  => {
     const lineChart = (
         //if statement goes here
         
-        dailyData.length!==0
+        dailyData.length
         ?(
             <Line 
                 //make the data an object
@@ -51,7 +51,16 @@ const Chart = ()  => {
                         // borderColor: 'red',
                         borderColor: 'rgba( 255, 0, 0, 0.5 )',
                         fill: true,
-                    }],
+                    },
+                    //Array3
+                    // {
+                    //     data:dailyData.map(({ recovered }) => recovered),
+                    //     label:'Recovered Cases',
+                    //     // borderColor: 'red',
+                    //     borderColor: 'rgba( 0, 255, 0, 0.5 )',
+                    //     fill: true,
+                    // }
+                ],
                 }}
             />) :null
     );
